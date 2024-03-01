@@ -1,16 +1,23 @@
-// Array de 10 animales tropicales
-const animalesTropicales = ["Mono araña", "Guacamayo rojo", "Iguana verde", "Jaguar", "Tapir", "Boa constrictor", "Perezoso", "Tucán", "Tortuga marina", "Delfín rosado"];
+// Array de animales
+const animales = ["Perro", "Gato", "Vaca", "Cerdo", "Caballo", "Gallina", "Pato", "Conejo", "Tortuga", "Jirafa"];
 
-// Mostrar el array en la consola
-console.log("Array de animales tropicales:", animalesTropicales);
+// Mostrar todos los valores del array
+console.log("Animales:", animales);
 
-// Mostrar los elementos en los índices 2, 4 y 11 (si existe)
-console.log("Índice 2:", animalesTropicales[2]);
-console.log("Índice 4:", animalesTropicales[4]);
-console.log("Índice 11:", animalesTropicales[11]); // undefined
+// Mostrar elementos en los índices 0, 4, 6 y 11 (si existe)
+console.log("Índice 0:", animales[0]);
+console.log("Índice 4:", animales[4]);
+console.log("Índice 6:", animales[6]);
+console.log("Índice 11:", animales[11]); // undefined
+
+// Cambiar el elemento 5 por "Pipito feliz"
+animales[5] = "Pipito feliz";
+
+// Agregar un nuevo elemento al final del array
+animales.push("Pipito triste");
 
 // Mostrar el tipo de dato del array
-console.log("Tipo de dato:", typeof animalesTropicales); // object
+console.log("Tipo de dato:", typeof animales); // object
 
 // Mostrar el tamaño del array
-console.log("Tamaño del array:", animalesTropicales.length);
+console.log("Tamaño del array:", animales.length);
